@@ -10,7 +10,7 @@ class Config:
     DEBUG = False
     HOST = "127.0.0.1"
 
-    if platform.system() == "Darwin":  # macOS cox i work on
+    if platform.system() == "Darwin":  # macOS coz i work on
         ENV = "development"
     elif platform.system() == "Linux":  # Linux
         ENV = "production"
@@ -29,7 +29,7 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     DEBUG = False
     LOGIN_REQUIRED = False
-    PORT = 8009  # 8009 to 80 on the internet
+    PORT = 8009  # 8009 to 80 on the internet on the server idk
     USERNAME = "girish_pvl"
     PASSWORD = "HelloML"
 
