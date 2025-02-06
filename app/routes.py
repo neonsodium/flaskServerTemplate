@@ -17,7 +17,7 @@ from werkzeug.utils import secure_filename
 
 from app import app
 
-with open("json/section.json") as f:
+with open("section.json") as f:
     data = json.load(f)
 
 
