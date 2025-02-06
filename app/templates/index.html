@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <div class="contdainer demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 class="main-title"><span class="thin">Unlock</span> Insights</h1>
+            </div>
+        </div>
+    </div>
+</head>
+
+
+
+
+<body>
+    <main>
+
+    {% for section in sections %}
+        <div class="group" id="connections">
+            <div class="group-con">
+                <span></span>
+                <a href="{{ section.url }}" class="contents-link">
+                    <div class="contents">
+                        <div class="contents-title">{{ section.title }}</div>
+                        <div class="contents-sub">{{ section.subtitle }}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+
+    </main>
+
+</body>
