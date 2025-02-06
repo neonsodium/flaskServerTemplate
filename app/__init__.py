@@ -12,4 +12,6 @@ elif Config.ENV == "production":
 elif Config.ENV == "testing":
     app.config.from_object(TestingConfig)
 
-from app import routes
+from app.routes import main_routes
+
+app.register_blueprint(main_routes, url_prefix="/")

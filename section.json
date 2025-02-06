@@ -1,17 +1,17 @@
 {
     "sections": [
         {
-            "endpoint": "index/revenue",
+            "endpoint": "datamine",
             "title": "revenue",
             "subtitle": "       Variables    effecting    Forcasting       "
         },
         {
-            "endpoint": "dynamic_time_series/amount_paid",
+            "endpoint": "model_deployment",
             "title": "Forcast revenue",
             "subtitle": "Visualize revenue forecasting"
         },
         {
-            "endpoint": "cluster",
+            "endpoint": "model_training",
             "title": "Clustered Data",
             "subtitle": " Download clustered data "
         }
